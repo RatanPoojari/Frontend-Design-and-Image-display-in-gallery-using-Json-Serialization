@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      json_serializable:
+        generate_for:
+          - lib/**/*.dart
+    builders:
+      build_runner_core:
+        generateFor:
+          - lib/**
+    builders:
+      build_for_input_logger:
+        implementation: _buildForInputLogger
+          generateFor:
+            - ^package:
